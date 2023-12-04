@@ -88,19 +88,20 @@ In this section there is a list of all destinations that can be filtered by name
 
 ```json
 {
-  "data": [
-    {
-      "category": "Budaya",
-      "city": "Yogyakarta",
-      "deskripsi": "Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.",
-      "name": "Candi Borobudur",
-      "place_id": "ChIJl9anCfCMei4Ry8NNdDRD0w0",
-      "price": "50000",
-      "rating": "4.7",
-      "spend_time": "120"
-    }
-  ],
-  "message": "success"
+    "data": [
+        {
+            "Address": "Cimenyan, Kabupaten Bandung",
+            "Category": "Western",
+            "Coordinate": "}'lat':-6.859342816769343, 'lng':107.6281670716133",
+            "Culinary_Ratings": "4.4",
+            "Description": "Restoran kasual terbuka yang menyajikan masakan internasional di bangunan bertingkat tiga & berpanorama indah.",
+            "Lat": "-6.859342817",
+            "Long": "107.6281671",
+            "Place_Id": "10",
+            "Place_Name": "The Stone Cafe"
+        }
+    ],
+    "message": "success"
 }
 ```
 
