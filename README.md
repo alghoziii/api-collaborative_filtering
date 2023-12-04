@@ -1,5 +1,11 @@
-# api-collaborative_filtering
+# Cloud Computing Path
 
+Creating **RESTful APIs** and deploying to [Google Cloud Platform](https://cloud.google.com)
+by using [Google App Engine](https://cloud.google.com/appengine) and [Google Compute Engine](https://cloud.google.com/compute) for communication between **Machine Learning Recommendation System Model** and **Mobile Development**. Using [Cloud Function](https://cloud.google.com/functions) to solve the Travelling Salesman Problem(TSP). Creating database in [Cloud SQL](https://cloud.google.com/sql). 
+
+# RESTful APIs
+
+In making the **RESTful APIs** we use [Python](https://github.com/python) using the [Flask Framework](https://flask.palletsprojects.com/en/2.0.x/) and for responses using **JSON** format. For each URL that can be used will be explained below.
 
 ## List Destination
 
@@ -96,3 +102,5 @@ In this section there is a list of all destinations that can be filtered by name
   "message": "success"
 }
 ```
+
+<br>
