@@ -1,7 +1,6 @@
 # Cloud Computing Path
 
-Creating **RESTful APIs** and deploying to [Google Cloud Platform](https://cloud.google.com)
-by using [Google App Engine](https://cloud.google.com/appengine) and [Google Compute Engine](https://cloud.google.com/compute) for communication between **Machine Learning Recommendation System Model** and **Mobile Development**. Using [Cloud Function](https://cloud.google.com/functions) to solve the Travelling Salesman Problem(TSP). Creating database in [Cloud SQL](https://cloud.google.com/sql). 
+blablaaa
 
 # RESTful APIs
 
@@ -13,61 +12,63 @@ In this section there is a list of all destinations that can be filtered by name
 
 **Base URL :**
 
-> https://getloc-314510.et.r.appspot.com/
+> https://belumdiup.com
 
 **Path :**
 
-> /wisata
+> /resto
 
 **Method :**
 
 > `GET`
 
 - **Show List Destination**
-  > https://getloc-314510.et.r.appspot.com/wisata
+  > http://localhost:5000/resto
 
 ```json
 {
-  "category": "Taman Hiburan",
-  "city": "Semarang",
-  "deskripsi": "Kampoeng Kopi Banaran, sebuah agro wisata perkebunan kopi di Kabupaten Semarang. Tempat wisata ini memiliki luas 462 hektar yang sebagian dijadikan resort dan tempat wisata. Lokasinya berada di Areal Perkebunan Kopi Kebun Getas Afdeling Assinan tepatnya Jl. Raya Semarang ? Solo Km. 35. Lokasi Kampoeng Kopi Banaran yang berada di ketinggian 480 ? 600m dpl membuat suhu udara disana sejuk antara 23?C ? 27?C. Jadi cocok banget buat pelesir mencari udara dingin dan segar dengan pemandangan indah. Menghilangkan penat kesibukan Kota besar, di tengah perkebunan yang asri.",
-  "name": "Kampoeng Kopi Banaran",
-  "place_id": "ChIJ-9JlAnxwei4R0SmxRv26nXM",
-  "price": "200000",
-  "rating": "4.3",
-  "spend_time": "90"
+    "data": [
+        {
+            "Address": "Cicendo, Kota Bandung",
+            "Category": "Seafood",
+            "Coordinate": "{'lat': -6.907839576390254, 'lng':107.596398032071",
+            "Culinary_Ratings": "4.5",
+            "Description": "Menyajikan menu buffet dengan hidangan seafood, sushi, sop buntut dan pilihan menu internasional lainnya.",
+            "Lat": "-6.907839576",
+            "Long": "107.596398",
+            "Place_Id": "1",
+            "Place_Name": "Purnawarman Restaurant"
+        },
 }
 ```
 
 <br>
 
 - **Show list destination filtering by place_id**
-
-  > https://getloc-314510.et.r.appspot.com/wisata/{place_id}
-
-  **Required**
+  > http://localhost:5000/resto/place_id
 
   > place_id = [string]
 
   **Example request**
 
-  > https://getloc-314510.et.r.appspot.com/wisata/ChIJ1RIjvSXmaC4Rn7u8rwSSLPw
+  > http://localhost:5000/resto/10
 
 ```json
 {
-  "data": [
-    {
-      "category": "Tempat Ibadah",
-      "city": "Bandung",
-      "deskripsi": "Masjid Raya Bandung Provinsi Jawa Barat, yang dulu dikenal dengan nama Masjid Agung Bandung adalah masjid yang berada di Kota Bandung, Jawa Barat, Indonesia. Status masjid ini adalah sebagai masjid provinsi bagi Jawa Barat. ",
-      "name": "Masjid Raya Bandung",
-      "place_id": "ChIJ1RIjvSXmaC4Rn7u8rwSSLPw",
-      "price": "0",
-      "rating": "4.7",
-      "spend_time": ""
-    }
-  ],
-  "message": "success"
+    "data": [
+        {
+            "Address": "Cimenyan, Kabupaten Bandung",
+            "Category": "Western",
+            "Coordinate": "}'lat':-6.859342816769343, 'lng':107.6281670716133",
+            "Culinary_Ratings": "4.4",
+            "Description": "Restoran kasual terbuka yang menyajikan masakan internasional di bangunan bertingkat tiga & berpanorama indah.",
+            "Lat": "-6.859342817",
+            "Long": "107.6281671",
+            "Place_Id": "10",
+            "Place_Name": "The Stone Cafe"
+        }
+    ],
+    "message": "success"
 }
 ```
 
@@ -75,7 +76,7 @@ In this section there is a list of all destinations that can be filtered by name
 
 - **Show list destination search by name**
 
-  > https://getloc-314510.et.r.appspot.com/wisata/search/name?nama={nama}
+  > http://localhost:5000/resto/search/place_name
 
   **Required**
 
@@ -83,7 +84,7 @@ In this section there is a list of all destinations that can be filtered by name
 
   **Example request**
 
-  > https://getloc-314510.et.r.appspot.com/wisata/search/name?nama=Borobudur
+  > http://localhost:5000/resto/search/place_name?place_name=The Stone Cafe
 
 ```json
 {
