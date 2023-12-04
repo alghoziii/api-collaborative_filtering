@@ -12,7 +12,7 @@ In this section there is a list of all destinations that can be filtered by name
 
 **Base URL :**
 
-> https://belumdiup.com
+> http://localhost:5000
 
 **Path :**
 
@@ -74,13 +74,13 @@ In this section there is a list of all destinations that can be filtered by name
 
 <br>
 
-- **Show list destination search by name**
+- **Show list destination search by place_name**
 
   > http://localhost:5000/resto/search/place_name
 
   **Required**
 
-  > nama = [string]
+  > place_nama = [string]
 
   **Example request**
 
